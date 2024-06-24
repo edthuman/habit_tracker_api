@@ -1,6 +1,6 @@
 # Habit Tracker API
 
-This is an API which allows interaction with a database of habit logs. Habit logs are related to a user and a habits, allowing many users to have many related habits that they can log completion of. 
+This is an API which allows interaction with a database of habit logs. Habit logs are related to both a user and a habit, allowing users to have multiple related habits that they can log the completion of. 
 
 ## Cloning The Repository
 
