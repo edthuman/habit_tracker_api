@@ -1,0 +1,151 @@
+{
+    "endpoints": {
+        "GET /api": {
+            "description": "serves a json representation of all available endpoints of the api"
+        },
+        "GET /api/habits": {
+            "description": "serves an array of all habits",
+            "queries": ["sort_by", "order", "limit", "p"],
+            "exampleResponse": [
+                { 
+                "slug": "quit smoking", 
+                "description": "quitting smoking cigarettes" 
+                }, 
+                { 
+                    "slug": "exercising", 
+                    "description": "doing a set amount of exercise daily"
+                }
+            ]
+        },
+        "POST /api/habits": {
+            "description": "posts a habit, serves the added topic object",
+            "queries": [],
+            "exampleResponse": {
+                "topic": { 
+                    "slug": "quit smoking", "description": 
+                    "quitting smoking cigarettes" 
+                }
+            }
+        },
+        "DELETE /api/habits": {
+            "description": "deletes a habit with given id, serves no response",
+            "queries": [],
+            "exampleResponse": {}
+        },
+        "GET /api/habits/:habit_id": {
+            "description": "serves the habit object for habit with given id",
+            "queries": [],
+            "exampleResponse": {
+                "habit": {
+                    "slug": "quit smoking", 
+                    "description": "quitting smoking cigarettes"
+                }
+            }
+        },
+        "GET /api/users/": {
+            "description": "serves an array of user objects",
+            "queries": ["sort_by", "order", "limit", "p"],
+            "exampleResponse": {
+                "users": [
+                    {
+                        "user_id": 1,
+                        "username": "jeff"
+                    }, 
+                    {
+                        "user_id": 2,
+                        "username": "jeff-alt"
+                    }
+                ]
+            }
+        },
+        "POST /api/users": {
+            "description": "posts a given user object, serves the newly created user",
+            "queries": [],
+            "exampleResponse": {
+                "user": {
+                    "user_id": 3,
+                    "username": "newuser"
+                }
+            }
+        },
+        "GET /api/users/:user_id": {
+            "description": "serves the object for a user with given id",
+            "queries": [],
+            "exampleResponse": {
+                "user": {
+                    "user_id": 1,
+                    "username": "jeff"
+                }
+            }
+        },
+        "PATCH /api/users/:user_id": {
+            "description": "updates the username for the user with given id, serves the updated user",
+            "queries": [],
+            "exampleResponse": {
+                "user":{
+                    "user_id": 1,
+                    "username": "newusername"
+                }
+            }
+        },
+        "DELETE /api/users/:user_id": {
+            "description": "deletes a user with given id, serves no response",
+            "queries": [],
+            "exampleResponse": {}
+        },
+        "GET /api/users/:user_id/habits": {
+            "description": "serves all habits related to a given user",
+            "queries": ["order", "limit", "p"],
+            "exampleResponse": {
+                "habits": [
+                    { 
+                    "slug": "quit smoking", 
+                    "description": "quitting smoking cigarettes" 
+                    }, 
+                    { 
+                        "slug": "exercising", 
+                        "description": "doing a set amount of exercise daily"
+                    }
+                ]
+            }
+        },
+        "GET /api/users/:user_id/habits/habit_id": {
+            "description": "serves an array of habit logs for a user with given id and habit with given id",
+            "quieres": ["sort_by", "order", "limit", "p"],
+            "exampleResponse": {
+                "logs": [
+                    {
+                        "log_id": 1,
+                        "username": "jeff",
+                        "habit_id": 1,
+                        "date": "2024-06-23"
+                    },
+                    {
+                        "log_id": 2,
+                        "username": "jeff",
+                        "habit_id": 1,
+                        "date": "2024-06-24"
+                    }
+                ]
+            }
+        },
+        "POST /api/users/:user_id/habits/habit_id": {
+            "description": "posts a given habit log for the user with given id, serves the newly created log object",
+            "queries": [],
+            "exampleResponse": {
+                "log": {
+                    "log_id": 3,
+                        "username": "jeff",
+                        "habit_id": 1,
+                        "date": "2024-06-25"
+                }
+            }
+        },
+        "DELETE /api/users/:user_id/habits/habit_id": {
+            "description": "deletes all habit logs for the user with given id for the habit with given id, serves no response",
+            "queries": [],
+            "exampleResponse": {}
+        }
+    }
+}
+
