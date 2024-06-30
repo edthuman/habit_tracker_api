@@ -1,0 +1,21 @@
+{
+  "name": "habit-tracker",
+  "description": "This is an API which allows interaction with a database of habit logs. Habit logs are related to a user and a habits, allowing many users to have many related habits that they can log completion of.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "nodemon listen.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2"
+  },
+}
