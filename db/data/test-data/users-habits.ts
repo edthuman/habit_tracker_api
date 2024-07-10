@@ -1,26 +1,26 @@
 module.exports = [
     {
-        user_id: 1,
-        habit_id: 2
+        user: "dipsy",
+        habit: "cooking"
     },
     {
-        user_id: 1,
-        habit_id: 3
+        user: "dipsy",
+        habit: "cleaning"
     },
     {
-        user_id: 1,
-        habit_id: 4
+        user: "dipsy",
+        habit: "saying eh-oh"
     },
     {
-        user_id: 2,
-        habit_id: 1
+        user: "laa-laa",
+        habit: "exercising"
     },
     {
-        user_id: 2,
-        habit_id: 4
+        user: "laa-laa",
+        habit: "saying eh-oh"
     },
     {
-        user_id: 3,
-        habit_id: 4
+        user: "po",
+        habit: "saying eh-oh"
     }
 ]
