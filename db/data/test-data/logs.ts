@@ -1,90 +1,112 @@
 module.exports = [
     {
-        user_habit_id: 2,
+        username: "dipsy",
+        habit: "cleaning",
         date: "2024-06-24"
     },
     {
-        user_habit_id: 5,
+        username: "laa-laa",
+        habit: "saying eh-oh",
         date: "2024-06-24"
     },
     {
-        user_habit_id: 6,
+        username: "po",
+        habit: "saying eh-oh",
         date: "2024-06-24"
     },
     {
-        user_habit_id: 3,
+        username: "dipsy",
+        habit: "saying eh-oh",
         date: "2024-06-25"
     },
     {
-        user_habit_id: 6,
+        username: "po",
+        habit: "saying eh-oh",
         date: "2024-06-25"
     },
     {
-        user_habit_id: 1,
+        username: "dipsy",
+        habit: "cooking",
         date: "2024-06-26"
     },
     {
-        user_habit_id: 5,
+        username: "laa-laa",
+        habit: "saying eh-oh",
         date: "2024-06-26"
     },
     {
-        user_habit_id: 6,
+        username: "po",
+        habit: "saying eh-oh",
         date: "2024-06-26"
     },
     {
-        user_habit_id: 3,
+        username: "dipsy",
+        habit: "saying eh-oh",
         date: "2024-06-27"
     },
     {
-        user_habit_id: 5,
+        username: "laa-laa",
+        habit: "saying eh-oh",
         date: "2024-06-27"
     },
     {
-        user_habit_id: 3,
+        username: "dipsy",
+        habit: "saying eh-oh",
         date: "2024-06-28"
     },
     {
-        user_habit_id: 6,
+        username: "po",
+        habit: "saying eh-oh",
         date: "2024-06-28"
     },
     {
-        user_habit_id: 2,
+        username: "dipsy",
+        habit: "cleaning",
         date: "2024-06-29"
     },
     {
-        user_habit_id: 3,
+        username: "dipsy",
+        habit: "saying eh-oh",
         date: "2024-06-29"
     },
     {
-        user_habit_id: 4,
+        username: "laa-laa",
+        habit: "exercising",
         date: "2024-06-29"
     },
     {
-        user_habit_id: 5,
+        username: "laa-laa",
+        habit: "saying eh-oh",
         date: "2024-06-29"
     },
     {
-        user_habit_id: 6,
+        username: "po",
+        habit: "saying eh-oh",
         date: "2024-06-29"
     },
     {
-        user_habit_id: 1,
+        username: "dipsy",
+        habit: "cooking",
         date: "2024-06-30"
     },
     {
-        user_habit_id: 3,
+        username: "dipsy",
+        habit: "saying eh-oh",
         date: "2024-06-30"
     },
     {
-        user_habit_id: 4,
+        username: "laa-laa",
+        habit: "exercising",
         date: "2024-06-30"
     },
     {
-        user_habit_id: 5,
+        username: "laa-laa",
+        habit: "saying eh-oh",
         date: "2024-06-30"
     },
     {
-        user_habit_id: 6,
+        username: "po",
+        habit: "saying eh-oh",
         date: "2024-06-30"
     },
 ]
