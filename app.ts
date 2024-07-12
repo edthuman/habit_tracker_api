@@ -3,6 +3,6 @@ import { getEndpoints } from './controllers/api.controllers';
 
 const app = express()
 
-app.get("/", getEndpoints);
+app.get("/api/", getEndpoints);
 
 export default app
