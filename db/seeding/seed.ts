@@ -72,9 +72,8 @@ exports.seed = (usersData : [{ username: string }], habitsData: any[], usersHabi
     })
     .then(([usersHabitsResponse, usersDictionary, habitsDictionary]: any[]) => {
         const inputUsersHabits = usersHabitsResponse.rows
-        
         const formattedLogsData = logsData.map((element)=>{
-            const userID = usersDictionary[element.username]
+            const userID = usersDictionary[element.user]
             const habitID = habitsDictionary[element.habit]
             
             const userHabitObject = inputUsersHabits.find((userHabit: any)=>{
