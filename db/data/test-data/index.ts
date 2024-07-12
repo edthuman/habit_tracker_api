@@ -1,5 +1,5 @@
-const usersData: [{ username: string }]= require("./users")
-const habitsData: [{ slug: string, desription: string }] = require("./habits")
+const usersData: [{ username: string }] = require("./users")
+const habitsData: [{ slug: string, description: string }] = require("./habits")
 const usersHabitsData: [{ username: string, habit: string }] = require("./users-habits")
 const logsData: [{ username: string, habit: string, date: string }] = require("./logs")
 
