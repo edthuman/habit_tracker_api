@@ -1,51 +1,51 @@
 module.exports = [
     {
-        username: "dipsy",
+        user: "dipsy",
         habit: "cleaning",
         date: "2024-06-24"
     },
     {
-        username: "dipsy",
+        user: "dipsy",
         habit: "saying eh-oh",
         date: "2024-06-25"
     },
     {
-        username: "po",
+        user: "po",
         habit: "saying eh-oh",
         date: "2024-06-25"
     },
     {
-        username: "dipsy",
+        user: "dipsy",
         habit: "cooking",
         date: "2024-06-26"
     },
     {
-        username: "po",
+        user: "po",
         habit: "saying eh-oh",
         date: "2024-06-26"
     },
     {
-        username: "dipsy",
+        user: "dipsy",
         habit: "saying eh-oh",
         date: "2024-06-27"
     },
     {
-        username: "laa-laa",
+        user: "laa-laa",
         habit: "exercising",
         date: "2024-06-29"
     },
     {
-        username: "dipsy",
+        user: "dipsy",
         habit: "cooking",
         date: "2024-06-30"
     },
     {
-        username: "laa-laa",
+        user: "laa-laa",
         habit: "exercising",
         date: "2024-06-30"
     },
     {
-        username: "po",
+        user: "po",
         habit: "saying eh-oh",
         date: "2024-06-30"
     },
