@@ -3,7 +3,7 @@ const format = require("pg-format")
 const { dropTable, createUsersTable, createHabitsTable, createUsersHabitsTable, createLogsTable } = require("./manage-tables.ts")
 const createRef = require("./utils").createRef
 
-exports.seed = (usersData : [{ username: string }], habitsData: any[], usersHabitsData: any[], logsData: any[]) => {
+exports.seed = ({usersData, habitsData, usersHabitsData, logsData}: any) => {
     return dropTable("logs")
     .then(() => {
         return dropTable("users_habits")
@@ -55,7 +55,7 @@ exports.seed = (usersData : [{ username: string }], habitsData: any[], usersHabi
         const inputHabits = habitsResponse.rows
         const habitsDictionary = createRef(inputHabits, "slug", "habit_id")
         
-        const formattedUserHabitData = usersHabitsData.map((element)=>{
+        const formattedUserHabitData = usersHabitsData.map((element: any)=>{
             const userID = usersDictionary[element.user]
             const habitID = habitsDictionary[element.habit]
             return [userID, habitID]
@@ -72,7 +72,7 @@ exports.seed = (usersData : [{ username: string }], habitsData: any[], usersHabi
     })
     .then(([usersHabitsResponse, usersDictionary, habitsDictionary]: any[]) => {
         const inputUsersHabits = usersHabitsResponse.rows
-        const formattedLogsData = logsData.map((element)=>{
+        const formattedLogsData = logsData.map((element: any)=>{
             const userID = usersDictionary[element.user]
             const habitID = habitsDictionary[element.habit]
             
