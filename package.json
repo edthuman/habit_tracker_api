@@ -6,6 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "nodemon listen.ts",
+    "seed": "npx ts-node ./db/seeding/run-seed.ts",
     "setup-dbs": "psql -f ./db/setup.sql",
     "test": "jest"
   },
