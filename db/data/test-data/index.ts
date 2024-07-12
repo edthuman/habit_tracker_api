@@ -1,7 +1,7 @@
 const usersData: [{ username: string }]= require("./users")
-const habitsData = require("./habits")
-const usersHabitsData = require("./users-habits")
-const logsData = require("./logs")
+const habitsData: [{ slug: string, desription: string }] = require("./habits")
+const usersHabitsData: [{ username: string, habit: string }] = require("./users-habits")
+const logsData: [{ username: string, habit: string, date: string }] = require("./logs")
 
 module.exports = { usersData, habitsData, usersHabitsData, logsData }
 
